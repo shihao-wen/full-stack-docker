@@ -3,6 +3,9 @@ Docker + Kubernetes + CI/CD
 
 ## Note for reviewer:
 I tried to use npm 10 version to install but somehow it is not wroking for the docker compose.
+Similarly, I somehow only get the kubenetes pod work only when I encrypt the secret in `env-secret.yaml` so i still using the orinal version....
+And am i supposed to put my aws credential which is the secret in `aws-secret.yaml`? (for my default credential)
+
 The current version is working fine with docker and kubernetes cluster.
 But after I forward the port/service I have similar issue as https://knowledge.udacity.com/questions/64440
 Any comments or recommendation will be appreciate.
