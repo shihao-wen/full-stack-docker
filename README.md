@@ -1,6 +1,13 @@
 # Full-Stack-MicroServices
 Docker + Kubernetes + CI/CD
 
+## Note for reviewer:
+I tried to use npm 10 version to install but somehow it is not wroking for the docker compose.
+The current version is working fine with docker and kubernetes cluster.
+But after I forward the port/service I have similar issue as https://knowledge.udacity.com/questions/64440
+Any comments or recommendation will be appreciate.
+On the other hand, I am wondering what is the A/B test at the bottom of the rubric?
+
 ## Docker
 ```bash
 docker run --rm --publish 8080:8080 -v $HOME/.aws:/root/.aws --env POSTGRESS_HOST=$POSTGRESS_HOST --env POSTGRESS_USERNAME=$POSTGRESS_USERNAME --env POSTGRESS_PASSWORD=$POSTGRESS_PASSWORD --env POSTGRESS_DB=$POSTGRESS_DB --env AWS_REGION=$AWS_REGION --env AWS_PROFILE=$AWS_PROFILE --env AWS_BUCKET=$AWS_BUCKET --env JWT_SECRET=$JWT_SECRET --name feed <your_dockerhub_username_lowercase>/udacity-restapi-feed
