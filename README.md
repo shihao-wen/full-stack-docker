@@ -66,5 +66,11 @@ kubectl describe pods <pod name>
 ```
 ![pods](/images/Kubernetes_pod.png)
 ```bash
-port-forward pod/<pod name> 8100:8100
+kubectl port-forward pod/<reverseproxy pod name> 8080:8080
+kubectl port-forward pod/<frontend pod name> 8100:8100
+```
+
+```bash
+lsof -n -i4TCP:8080
+kill -9 PID
 ```
